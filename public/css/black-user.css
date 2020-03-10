@@ -1,0 +1,442 @@
+			body {
+				margin: 0px;
+				padding: 0px;
+				font-family: Microsoft YaHei;
+			}
+			
+			body,
+			html {
+				height: 100%;
+				min-height: 900px;
+				min-width: 1600px;
+			}
+			
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				box-sizing: border-box;
+				outline: none;
+			}
+			
+			.index {
+				width: 100%;
+				height: 100%;
+				background: url(../img/background.png) no-repeat;
+				background-size: 100% 100%;
+				min-width: 1200px;
+			}
+			/*头部*/
+			
+			header {
+				height: 60px;
+				background: rgba(101, 186, 206, 0);
+				color: #FFFFFF;
+			}
+			
+			header a {
+				float: left;
+				font-size: 16px;
+				font-weight: 400;
+				color: rgba(254, 252, 252, 1);
+				text-decoration: none;
+				margin-top: 20px;
+				vertical-align: middle;
+			}
+			
+			header a img {
+				margin-top: -3px;
+			}
+			
+			.head_right {
+				height: 60px;
+				width: 250px;
+				float: right;
+				padding-right: 30px;
+			}
+			
+			.head_left {
+				float: left;
+				margin-left: 12px;
+			}
+			
+			.head_right-left {
+				padding-top: 6px;
+				float: left;
+			}
+			
+			.head_right-left img {
+				height: 50px;
+				width: 50px;
+				border-radius: 50%;
+			}
+			
+			.head_right-right {
+				padding-top: 7px;
+				float: right;
+				font-size: 17px;
+			}
+			/***********************************中间大框**************************************/
+			
+			.Questions-content {
+				width: 1440px;
+				height: 738px;
+				background: rgba(248, 252, 255, 1);
+				box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+				margin: 72px auto 0;
+				position: relative;
+				padding-top: 46px;
+			}
+			
+			.Questions-content .choice-ul {
+				display: flex;
+				position: absolute;
+				top: -39px;
+			}
+			
+			.Questions-content .choice-ul li {
+				width: 134px;
+				height: 36px;
+				background: rgba(248, 252, 255, 1);
+				box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.19);
+				border-radius: 5px;
+				text-align: center;
+				line-height: 36px;
+				margin-right: 3px;
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				cursor: pointer;
+			}
+			
+			.Questions-content .choice-ul li a {
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				cursor: pointer;
+				text-decoration: none;
+				display: inline-block;
+				height: 36px;
+				width: 134px;
+			}
+			
+			.Questions-content .choice-ul li a:hover {
+				color: #FFFFFF;
+			}
+			
+			.Questions-content .choice-ul li:hover {
+				background: rgba(101, 186, 206, 1);
+				color: #FFFFFF;
+			}
+			
+			.Questions-content .choice-ul li:nth-child(4) {
+				background: rgba(101, 186, 206, 1);
+				color: #FFFFFF;
+			}
+			
+			.content-main {
+				width: 1260px;
+				height: 646px;
+				background: rgba(248, 252, 255, 1);
+				box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+				margin: 0 auto;
+				padding-top: 3px;
+			}
+			/*主页面的css*/
+			.black-main-one{
+				position: relative;
+			}
+			.select{
+				position: absolute;
+				top: 33px;
+				left: 874px;
+								height: 30px;
+				width: 304px;
+				padding-left: 10px;
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				cursor: pointer;
+				float: left;
+				margin-left: 50px;
+				border-radius: 5px;
+			}
+			.search{
+				position: absolute;
+				left: 30px;
+				top: 30px;
+			}
+			.search-input {
+			width:304px;
+height:30px;
+border:1px solid rgba(140,138,138,1);
+border-radius:5px;
+margin-right: 10px;
+padding-left: 5px;
+			}
+			.search-btn{
+				width:88px;
+height:30px;
+background:rgba(101,186,206,1);
+border-radius:5px;
+font-size:16px;
+font-family:Microsoft YaHei;
+font-weight:400;
+color:rgba(255,255,255,1);
+			}
+			
+			.black-user-box {
+				width: 1200px;
+				max-height: 375px;
+				margin: 98px auto 0;
+				border: 1px solid rgba(140, 138, 138, 1);
+				border-right: none;
+				border-bottom: none;
+			}
+			
+			.black-user-box ul {
+				height: 34px;
+				width: 100%;
+				display: flex;
+			}
+			
+			.black-user-box ul li {
+				width: 100%;
+				height: 100%;
+				flex: 1;
+				text-align: center;
+				line-height: 34px;
+				border-right: 1px solid rgba(140, 138, 138, 1);
+				border-bottom: 1px solid rgba(140, 138, 138, 1);
+				padding-bottom: 6px;
+			}
+			
+			.black-user-box ul li input {
+				height: 100%;
+				width: 99%;
+				text-align: center;
+				border: none;
+				background: rgba(248, 252, 255, 1);
+			}
+			
+			.look-balck-user {
+				display: inline-block;
+				width: 63px;
+				height: 27px;
+				background: rgba(101, 186, 206, 1);
+				color: rgba(254, 252, 252, 1);
+				border-radius: 5px;
+				line-height: 27px;
+				cursor: pointer;
+			}
+			/*黑名单分页*/
+			
+			.balck-user-page {
+				height: 27px;
+				width: 100%;
+				margin-top: 50px;
+				display: flex;
+				justify-content: flex-end;
+				padding-right: 41px;
+				position: absolute;
+				right: 70px;
+				bottom: 130px;
+			}
+			
+			.dian {
+				width: 31px;
+			}
+			
+			.balck-user-page div {
+				margin-right: 10px;
+				background: rgba(231, 231, 231, 1);
+				border-radius: 5px;
+				height: 27px;
+				line-height: 27px;
+				text-align: center;
+				font-size: 14px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				cursor: pointer;
+			}
+			
+			.focus {
+				color: white !important;
+				background: rgba(101, 186, 206, 1)!important;
+			}
+			
+			.jump {
+				width: 108px;
+				height: 27px;
+				background: rgba(231, 231, 231, 1);
+				border-radius: 5px;
+				line-height: 27px;
+			}
+			
+			.jump input {
+				width: 27px;
+				height: 18px;
+				background: rgba(255, 255, 255, 1);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+				margin-right: 5px;
+			}
+			
+			.balck-user-page .last-page,
+			.next-page {
+				width: 63px;
+				float: right;
+			}
+			
+			.balck-user-page .page {
+				width: 31px;
+			}
+			/*弹出框*/
+			
+			.black-main-two {
+				position: relative;
+				padding-top: 0;
+			}
+			
+			.back-btn {
+				width: 72px;
+				height: 36px;
+				background: rgba(101, 186, 206, 1);
+				border-radius: 5px;
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(255, 255, 255, 1);
+				text-align: center;
+				line-height: 36px;
+				cursor: pointer;
+				position: absolute;
+				top: -38px;
+			}
+			
+			.state {
+				font-size: 18px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(65, 65, 65, 1);
+				position: absolute;
+				top: -28px;
+				right: 0;
+			}
+			
+			.black-main-two-left {
+				height: 100%;
+				width: 50%;
+				float: left;
+			}
+			
+			.black-information {
+				margin-top: 150px;
+				margin-left: 100px;
+			}
+			
+			.black-information div {
+				margin-bottom: 50px;
+			}
+			
+			.black-information label {
+				width: 84px;
+				display: inline-block;
+				text-align: right;
+				font-size: 18px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+			}
+			
+			.black-information input {
+				width: 308px;
+				height: 31px;
+				border: 1px solid rgba(136, 137, 137, 1);
+				border-radius: 5px;
+				padding-left: 5px;
+			}
+			
+			.black-main-two-right {
+				height: 100%;
+				width: 50%;
+				float: left;
+				position: relative;
+			}
+			
+			.jubaolan {
+				width: 593px;
+				height: 290px;
+				border: 1px solid rgba(136, 137, 137, 1);
+				border-radius: 5px;
+				margin-top: 100px;
+				padding-left: 20px;
+			}
+			
+			.jubaolan-left {
+				width: 45%;
+				height: 100%;
+				float: left;
+			}
+			
+			.jubaolan-left .jb {
+				display: inline-block;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			
+			.input-img {
+              width: 100%;
+              height: 100%;
+			}
+			
+			.jubaolan-left-input {
+				width: 258px;
+				height: 173px;
+				background: rgba(255, 255, 255, 1);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			.jubaolan-left-input span {
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				opacity: 0.6;
+			}
+			
+			.jubaolan-right {
+				width: 45%;
+				height: 100%;
+				float: right;
+			}
+			
+			.jubaolan-right textarea {
+				height: 100%;
+				width: 100%;
+				resize: none;
+				border-radius: 5px;
+				border: none;
+				padding: 10px;
+			}
+			
+			.delete-black {
+				width: 140px;
+				height: 34px;
+				background: rgba(101, 186, 206, 1);
+				border-radius: 10px;
+				font-size: 18px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(255, 254, 254, 1);
+				text-align: center;
+				line-height: 34px;
+				position: absolute;
+				left: 237px;
+				top: 454px;
+				cursor: pointer;
+			}

@@ -1,0 +1,60 @@
+/* 公共头部--begin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+textarea{
+  outline: none;
+}
+body,
+html {
+  height: 100%;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+}
+input{
+  border: 0;
+  outline: none;
+}
+button{
+  border: 0;
+}
+/* table设置 */
+table,
+tbody,
+thead,
+tr,
+td {
+  border-collapse: collapse;
+  border: 1px solid #000000;
+}
+
+/* select下拉箭头修改 */
+
+/*下拉前箭头*/
+select {
+  /*取消默认箭头开始*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*取消默认箭头结束*/
+  border: none;
+  color: #666;
+  /* 文本居中*/
+  background: url(../img/loginReg/下箭头.png) no-repeat right 0 center;
+  background-size: 34px 30px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+/*下拉后箭头*/
+select:focus {
+  background-size: 34px 30px;
+   background: url(../img/loginReg/下箭头.png) no-repeat right 0 center;
+}
+
+/* a标签的定义 */
+a {
+  text-decoration: none;
+}

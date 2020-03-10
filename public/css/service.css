@@ -1,0 +1,687 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.service {
+    width: 100%;
+    height: 969px;
+    min-width: 1200px;
+    background: url("../img/bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+/*头部*/
+.head {
+    width: 100%;
+    height: 60px;
+    background: rgba(101, 186, 206, 0);
+}
+
+.head span {
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 60px;
+    margin-left: 33px;
+    color: #fff;
+}
+
+/*主体内容*/
+.content {
+    width: 74.79%;
+    min-width: 1200px;
+    height: 801px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+/*欢迎xxx客服*/
+.welcome {
+    position: absolute;
+    width: 300px;
+    height: 78px;
+    background: url("../img/diamond.png");
+    background-size: 100% 100%;
+    top: 58px;
+    left: 60%;
+    margin-left: -150px;
+    text-align: center;
+    z-index: 6;
+}
+
+.welcome span {
+    display: block;
+    height: 78px;
+    line-height: 78px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+
+/*内容*/
+.contents {
+    position: absolute;
+    width: 100%;
+    height: 777px;
+    border-radius: 5px;
+    background: rgba(248, 252, 255, .54);
+    top: 96px;
+}
+
+/*左边客服名字*/
+.serviceName {
+    float: left;
+    width: 17.41%;
+    height: 100%;
+
+    background: rgba(248, 252, 255, .7);
+    overflow: auto;
+}
+
+.serviceName_content {
+    width: 100%;
+    height: 80px;
+    background: rgba(157, 213, 226, 0.5);
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+.serviceName_content:first-child {
+    margin-top: 0;
+}
+
+.serviceName_content_hand {
+    float: left;
+    padding-top: 9px;
+    width: 25.2%;
+    min-width: 62px;
+    height: 62px;
+    margin-left: 22px;
+}
+
+.serviceName_content_hand img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.serviceName_content_name {
+    float: left;
+    line-height: 80px;
+    font-size: 16px;
+    margin-left: 26px;
+}
+
+.serviceName_content_name span {
+    color: #010101;
+    cursor: default;
+}
+
+/*点击部分*/
+.serviceName_active {
+    background: rgba(157, 213, 226, 1);
+}
+
+.notRead {
+    float: left;
+    margin-left: 26px;
+    width: 18px;
+    height: 18px;
+    margin-top: 31px;
+    background: rgba(214, 42, 50, 1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+}
+
+.notRead span {
+    color: #fff;
+    font-size: 14px;
+}
+
+/*中间聊天页面*/
+.chat {
+    float: left;
+    width: 81.18%;
+    height: 100%;
+}
+
+.chat_content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.chat_content_info {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.chat_content_info_img {
+    margin-top: 250px;
+    vertical-align: middle;
+
+}
+
+.chat_content_info_p {
+    margin-bottom: 10px;
+    vertical-align: middle;
+    margin: 0 auto;
+    color: #888888;
+    text-align: center;
+}
+
+.chat_contents {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display:block;
+}
+
+/*聊天内容*/
+.chatContent {
+    width: 100%;
+    height: 508px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.chatContent_div {
+    width: 100%;
+    height: 508px;
+    overflow: auto;
+
+}
+
+/*输入聊天内容*/
+.chatInput {
+    width: 100%;
+    height: 182px;
+    background: rgba(248, 252, 255, 0.9);
+    position: relative;
+}
+
+/*功能键*/
+.chatInput_function {
+    width: 100%;
+    height: 20px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.chatInput_function span {
+    display: inline-block;
+    width: 20px;
+    height: 100%;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.chatInput_function img:hover {
+    background: #ebebeb;
+}
+
+.chatInput_function label:hover {
+    background: #ebebeb;
+    cursor: pointer;
+}
+
+.chatInput_function span img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.chatInput_function span label {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* 字体 */
+.font_size_choice {
+    display: none;
+    height: 30px;
+    width: 843px;
+    position: absolute;
+    top: -42px;
+    left: -20px;
+    background: whitesmoke;
+    font-family: "楷体";
+    padding-bottom: 2px;
+}
+
+.font_size_choice ul {
+    display: flex;
+    width: 40%;
+    list-style: none;
+    position: absolute;
+    top: 8px;
+    margin-left: 50px;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-text-justify: space-between;
+    color: #999;
+}
+
+.font_size_choice ul li {
+    cursor: pointer;
+    padding: 3px 7px;
+    background-color: #e4e4e4;
+    border-radius: 3px;
+    margin-top: -3px;
+}
+
+.font_size_choice ul li:hover {
+    cursor: pointer;
+    background-color: #888888;
+    color: #ffffff;
+
+}
+
+.font_size_choice ul li:nth-of-type(1) {
+    cursor: default;
+    padding: 3px;
+    background-color: #888888;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-top: -3px;
+}
+
+.font_size_choice_bold {
+
+    position: absolute;
+    right: 30px;
+}
+
+/* 表情包 */
+.chatInput_function_img2_content {
+    position: absolute;
+    width: 240px;
+    height: 115px;
+    top: -145px;
+    left: -64px;
+    padding: 10px;
+    background: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    display: none;
+}
+
+.chatInput_function_img2_content li {
+    float: left;
+    list-style: none;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    border-radius: 2px;
+}
+
+.chatInput_function_img2_content li:hover {
+    background-color: #ebebeb;
+}
+
+
+/* 输入框 */
+.chatInput_input {
+    position: absolute;
+    height: 110px;
+    width: 100%;
+    outline: none;
+    overflow: auto;
+}
+
+.chatInput_input img {
+    max-width: 200px;
+    max-height: 100px;
+}
+
+/*按钮*/
+.chatInput_button {
+    float: right;
+    width: 330px;
+    height: 34px;
+    margin-top: 112px;
+}
+
+.clo_se {
+    float: right;
+    width: 136px;
+    height: 100%;
+    margin-right: 20px;
+    background: rgba(101, 186, 206, 1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.clo_se:hover {
+    background-color: #9DD5E2;
+}
+
+.clo_se i {
+    display: block;
+    float: left;
+    width: 19px;
+    height: 19px;
+    margin-top: 7px;
+    margin-left: 36px;
+}
+
+.clo_se:nth-of-type(1) i {
+    display: block;
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-top: 9px;
+    margin-left: 36px;
+}
+
+.clo_se span {
+    display: block;
+    float: left;
+    line-height: 34px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.close i {
+    background: url("../img/close.png");
+    background-size: 100% 100%;
+}
+
+.send {
+    margin-left: 20px;
+}
+
+.send i {
+    background: url("../img/send.png");
+    background-size: 100% 100%;
+}
+
+
+/*客服*/
+.service_person {
+    float: left;
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 90%;
+}
+.service_person img{
+    max-width: 500px;
+}
+/*头像*/
+.service_person_hand {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.service_person_hand img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/*聊天*/
+.service_person_chat {
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.service_person_chat i {
+    display: block;
+    float: left;
+    width: 0;
+    height: 0;
+    border: 7px solid #f00283;
+    border-color: transparent #82c4d3 transparent transparent;
+
+}
+
+.service_person_chat>div {
+    display: inline-block;
+    float: left;
+    width: auto;
+    word-wrap: break-word;
+    word-break: normal;
+    white-space:normal;
+    max-width: 650px;
+    margin-top: -10px;
+    line-height: 20px;
+    background: rgba(130, 196, 211, 1);
+    border-radius: 10px;
+    padding: 10px 25px;
+    height: auto;
+    color: #fff;
+    font-size: 14px;
+}
+
+.service_person_chat>div>pre {
+    width: auto;
+    word-wrap: break-word;
+    word-break: normal;
+    white-space:normal;
+}
+
+
+/*机器*/
+.robot {
+    float: right;
+    margin-top: 30px;
+    width: 90%;
+    margin-right: 25px;
+}
+.robot img{
+ max-width:500px;
+}
+
+/*头像*/
+.robot_hand {
+    float: right;
+    width: 50px;
+    height: 50px;
+    background: rgba(130, 196, 211, 1);
+    border-radius: 50%;
+}
+
+.robot_hand .robot_hand_pic {
+    width: 100%;
+    height: 100%;
+    background: url("../img/service.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+/*聊天*/
+.robot_chat {
+    float: right;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 90%;
+}
+
+.robot_chat i {
+    display: block;
+    float: right;
+    width: 0;
+    height: 0;
+    border: 7px solid #f00283;
+    border-color: transparent transparent transparent #82c4d3;
+
+}
+.robot_chat>div {
+    margin-top: -10px;
+    float: right;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    word-wrap: break-word;
+    word-break: normal;
+    white-space:normal;
+    max-width: 90%;
+    font-size: 16px;
+    line-height: 20px;
+    background: rgba(130, 196, 211, 1);
+    border-radius: 10px;
+    padding: 10px 25px;
+    color: #fff;
+}
+.robot_chat>div>pre {
+    width: auto;
+    word-wrap: break-word;
+    word-break: normal;
+    white-space:normal;
+}
+
+
+
+
+
+/*右边举报部分*/
+.report {
+    float: left;
+    width: 17.41%;
+    height: 100%;
+    background: rgba(248, 252, 255, .54);
+}
+
+.report span.report_list {
+    display: block;
+    font-size: 14px;
+    color: #494848;
+    margin-left: 14px;
+    margin-top: 16px;
+    padding-bottom: 20px;
+}
+
+.add {
+    width: 195px;
+    height: 195px;
+    background: rgba(225, 225, 225, 1);
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+
+.add img {
+    width: 140px;
+    max-height: 140px;
+    margin: 5px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 3px;
+}
+
+
+.report_input {
+    width: 195px;
+    height: 245px;
+    margin: 10px auto;
+    line-height: 25px;
+
+}
+
+.report_input textarea {
+    border: none;
+    outline: none;
+    background: rgba(225, 225, 225, 1);
+    border-radius: 10px;
+    text-indent: 1em;
+    line-height: 25px;
+    overflow: auto;
+    resize: none;
+}
+
+.report_button {
+    float: right;
+    width: 136px;
+    height: 34px;
+    background: rgba(101, 186, 206, 1);
+    border-radius: 10px;
+    margin-right: 27px;
+
+}
+
+.report_button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.report_button a:hover {
+    background-color: #9DD5E2;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/*图片展示*/
+#img_frame{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(192,192,192,0.8);
+    z-index: 99999;
+    display: none;
+}
+.img_div{
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../img/5B467F76855189703B81606B5F47A750.jpg);
+    background-position:center ;
+    background-repeat: no-repeat;
+}
+
+.hide-img{
+    width: 18px;
+    height: 17px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+.report_button {
+    width: 100%;
+    height: 34px;
+    width: 73%;
+}
+
+.report_button button {
+    display: block;
+    width: 136px;
+    height: 100%;
+    cursor: pointer;
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+    background: rgba(101, 186, 206, 1);
+    border-radius: 10px;
+    color: #fff;
+    outline: none;
+    margin: 0 auto;
+    border: 0;
+}

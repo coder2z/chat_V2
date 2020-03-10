@@ -1,0 +1,426 @@
+/* 主页面的布局 */
+.index {
+  width: 100%;
+ height: 100%;
+ min-width: 1200px;
+ min-height: 969px;
+  background: url("../img/bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+/*----------------------------头部-------------------*/
+.header {
+  width: 100%;
+  height: 60px;
+  background: rgba(101, 186, 206, 0);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 40px;
+  color: #fff;
+}
+
+/* 头部的右边logo */
+.header-index-logo {
+
+  height: 100%;
+  width: 152px;
+  margin-top: 20px;
+}
+
+.header-index-logo img {
+  width: 35px;
+  height: 35px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+/* 头部右边的信息 */
+.header-index-logo-login {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.header-index-info {
+  display: inline-block;
+  width: 60%;
+  vertical-align: middle;
+  font-size: 14px;
+  height: 60px;
+}
+
+.header-index-info span:nth-of-type(2) {
+  display: inline-block;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+/*---------------------- 公共头部--end -------------------*/
+
+
+
+/* ------------account-manage----客服管理主页 --------------------*/
+
+.content {
+  width: 100%;
+  height: 909px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1440px;
+  height: 738px;
+  background: rgba(248, 252, 255, 1);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+  position: relative;
+  display: flex;
+
+}
+
+/* 头部导航栏 */
+.nav {
+  position: absolute;
+  height: 36px;
+  width: 700px;
+  top: -37px;
+}
+
+.nav-item {
+  width: 134px;
+  height: 36px;
+  cursor: pointer;
+  background: rgba(248, 252, 255, 1);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.nav-item span {
+  vertical-align: middle;
+  margin-top: 6px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+.nav-item:nth-of-type(5) {
+  background: rgba(101, 186, 206, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* ---------  --虚线盒子----------------- */
+
+/*个人账号操作主体--- */
+.OS-container-box {
+  width: 1260px;
+  margin: auto;
+  background: rgba(248, 252, 255, 1);
+}
+
+/* 上半部 */
+.OS-container-box-top {
+  width: 1260px;
+  margin-bottom: 20px;
+  height: 389px;
+  background: rgba(248, 252, 255, 1);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+}
+
+.OS-container-box-top-title {
+  width: 100%;
+  height: 25px;
+  font-size: 24px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  padding: 50px 0 50px 115px;
+}
+
+/* table表 */
+.OS-container-table {
+  width: 900px;
+  height: 181px;
+  margin: auto;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+.OS-container-table td {
+  text-align: center;
+  width: 150px;
+  height: 35px;
+}
+
+.OS-container-tbody input {
+  width: 88px;
+  height: 30px;
+  background: rgba(101, 186, 206, 1);
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(254, 252, 252, 1);
+}
+
+/* 页码 */
+.OS-container-page {
+  width: 72%;
+  padding-right: 10px;
+  background: rosybrown;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-right: 7px;
+}
+
+.OS-container-page-info {
+  float: right;
+  width: auto;
+}
+
+/* 页码上一页，下一页 */
+.OS-container-page-info button {
+  width: 63px;
+  height: 27px;
+  background: rgba(231, 231, 231, 1);
+  border-radius: 5px;
+  border: 0;
+
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+}
+
+.OS-container-page-info input {
+  width: 31px;
+  height: 27px;
+  cursor: pointer;
+  margin-right: 5px;
+  background: rgba(231, 231, 231, 1);
+  border-radius: 5px;
+  font-size: 14px;
+  border: 0;
+  color: #000000;
+}
+
+
+/* 主页页码跳页 */
+.OS-container-page-info-changePage {
+  display: inline-block;
+  width: 110px;
+  border-radius: 5px;
+  text-align: center;
+  background: rgba(231, 231, 231, 1);
+}
+
+.OS-container-page-info-changePage input {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+  margin: 5px 11px 4px 13px;
+  color: #000000 !important;
+  font-size: 18px;
+  cursor: text;
+  border-radius: 0;
+  align-items: center;
+  background: #fff !important;
+}
+
+.OS-container-page-info input:nth-of-type(1) {
+  background: rgba(101, 186, 206, 1);
+  color: #fff;
+}
+
+/* ------------------------页码end-------------------- */
+/* 底部 */
+.OS-container-box-bottom {
+  width: 1260px;
+  height: 263px;
+  background: rgba(248, 252, 255, 1);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+}
+
+.OS-container-box-bottom-title {
+  height: 25px;
+  width: 100%;
+  padding: 20px 0 85px 115px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.OS-container-box-bottom-content {
+  margin: 0 auto;
+  height: 35px;
+  width: 67%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.OS-container-box-bottom-content span {
+  display: inline-block;
+  font-size: 18px;
+  color: rgba(65, 65, 65, 1);
+}
+
+.OS-container-box-bottom-content input {
+  width: 308px;
+  height: 31px;
+  border: 1px solid rgba(136, 137, 137, 1);
+  border-radius: 5px;
+  margin: 0 60px 0 20px;
+}
+
+.OS-container-box-bottom-content button {
+  width: 105px;
+  cursor: pointer;
+  height: 30px;
+  background: rgba(101, 186, 206, 1);
+  border-radius: 5px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* -------------------其他详细设置--------------- */
+.OS-container-detailedSet {
+  width: 1195px;
+  margin: auto;
+  height: 574px;
+  background: rgba(248, 252, 255, 1);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+/* 返回按钮 */
+.OS-container-detailedSet-return {
+  position: absolute;
+  top: -37px;
+  width: 72px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  background: rgba(101, 186, 206, 1);
+  border-radius: 5px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+}
+/* 主体内容 */
+
+.OS-container-detailedSet-title{
+  width: 80%;
+  padding: 30px 0 30px 35px;
+  height:24px;
+  text-align: left;
+  font-size:24px;
+  color:rgba(0, 0, 0, 1);
+}
+.OS-container-detailedSet-content{
+height: 300px;
+width: 94%;
+margin:0 auto;
+}
+.OS-container-detailedSet-content-cover{
+  width:528px;
+  height:299px;
+  border:1px solid rgba(136, 137, 137, 1);
+  border-radius:5px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 62px;
+  padding: 10px 10px 10px 20px;
+}
+.OS-container-detailedSet-content-cover span {
+
+width:100%;
+height:16px;
+font-size:16px;
+display: block;
+font-family:Microsoft YaHei;
+font-weight:400;
+color:rgba(0, 0, 0, 1);
+}
+.OS-container-detailedSet-content-cover-img{
+width:150px;
+height:101px;
+background:rgba(255, 255, 255, 1) url(../img/pushImg.png) no-repeat center;
+border:1px solid rgba(0, 0, 0, 0.3);
+
+margin: 0 auto;
+margin-top: 70px;
+}
+
+.OS-container-detailedSet-content-info{
+  width:528px;
+  height:299px;
+  display: inline-block;
+  border:1px solid rgba(136, 137, 137, 1);
+  border-radius:5px;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 20px;
+}
+.OS-container-detailedSet-content-info span {
+  width: 100%;
+  height: 20px;
+  font-size: 16px;
+  display: block;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+.OS-container-detailedSet-content-info textarea {
+ width: 482px;
+ height: 243px;
+ border: 0;
+  font-size: 16px;
+  resize: none;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 10px;
+  font-size: 16px;
+  background: rgba(248, 252, 255, 1);
+  color: rgba(0, 0, 0, 1);
+}
+/* 提交按钮 */
+.OS-container-detailedSet-button{
+  height: 30px;;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  justify-content:space-around;
+
+}
+.OS-container-detailedSet-button input{
+width:136px;
+height:34px;
+background:rgba(101, 186, 206, 1);
+border-radius:10px;
+font-size:20px;
+color:rgba(255, 254, 254, 1);
+cursor: pointer;
+}
+
+

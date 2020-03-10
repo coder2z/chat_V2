@@ -1,0 +1,601 @@
+/* 元素拖动 */
+.over {
+  border: 1px dashed rgb(1, 69, 255);
+}
+
+
+
+/* 主页面的布局 */
+.index {
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+  min-height: 969px;
+  background: url("../img/bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+/*----------------------------头部-------------------*/
+.header {
+  width: 100%;
+  height: 60px;
+  background: rgba(101, 186, 206, 0);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 40px;
+  color: #fff;
+}
+
+/* 头部的右边logo */
+.header-index-logo {
+
+  height: 100%;
+  width: 152px;
+  margin-top: 20px;
+}
+
+.header-index-logo img {
+  width: 35px;
+  height: 35px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+/* 头部右边的信息 */
+.header-index-logo-login {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.header-index-info {
+  display: inline-block;
+  width: 60%;
+  vertical-align: middle;
+  font-size: 14px;
+  height: 60px;
+}
+
+.header-index-info span:nth-of-type(2) {
+  display: inline-block;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+/*---------------------- 公共头部--end -------------------*/
+
+
+
+/* ------------account-manage----客服管理主页 --------------------*/
+
+.content {
+  width: 100%;
+  height: 909px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1440px;
+  height: 738px;
+  background: rgba(248, 252, 255, 1);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+  position: relative;
+  display: flex;
+
+}
+
+.nav {
+  position: absolute;
+  height: 36px;
+  width: 700px;
+  top: -37px;
+}
+
+/* ---------虚线盒子----------------- */
+.ME-container-box {
+  width: 1260px;
+  margin: auto;
+  height: 646px;
+  background: rgba(248, 252, 255, 1);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* 问题内容管理 主页*/
+.ME-container-main {
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-item {
+  width: 134px;
+  height: 36px;
+  cursor: pointer;
+  background: rgba(248, 252, 255, 1);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.nav-item span {
+  vertical-align: middle;
+  margin-top: 6px;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+.nav-item:nth-of-type(3) {
+  background: rgba(101, 186, 206, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+
+/* --------------问题内容搜索框 -----------------*/
+
+.ME-container-search {
+  width: 72%;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 10px 0 10px;
+  justify-content: flex-start;
+}
+
+.ME-container-search-input {
+  width: 304px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgba(140, 138, 138, 1);
+  border-radius: 5px;
+  margin-right: 40px;
+  padding: 2px 0 2px 8px;
+}
+
+/* 搜索按钮 */
+.ME-container-search-button {
+  width: 88px;
+  height: 30px;
+  background: rgba(101, 186, 206, 1);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* 添加按钮 */
+.ME-container-add-button {
+  width: 88px;
+  cursor: pointer;
+  height: 30px;
+  background: rgba(101, 186, 206, 1);
+  border-radius: 5px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  right: 40px;
+}
+
+/* table表 */
+.ME-container-table {
+  width: 900px;
+  height: 466px;
+  margin: auto;
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+.ME-container-table td {
+  text-align: center;
+  width: 150px;
+  height: 35px;
+}
+
+.ME-container-tbody input {
+  width: 88px;
+  height: 30px;
+  background: rgba(101, 186, 206, 1);
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(254, 252, 252, 1);
+}
+
+/* ------------------------页码 公用-------------------- */
+/* 页码 */
+.ME-container-page {
+  width: 72%;
+  padding-right: 10px;
+  background: rosybrown;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-right: 7px;
+}
+
+.ME-container-page-info {
+  float: right;
+  width: auto;
+}
+
+/* 页码上一页，下一页 */
+.ME-container-page-info button {
+  width: 63px;
+  height: 27px;
+  background: rgba(231, 231, 231, 1);
+  border-radius: 5px;
+  border: 0;
+
+  font-size: 14px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+}
+
+.ME-container-page-info input {
+  width: 31px;
+  height: 27px;
+  cursor: pointer;
+  margin-right: 5px;
+  background: rgba(231, 231, 231, 1);
+  border-radius: 5px;
+  font-size: 14px;
+  border: 0;
+  color: #000000;
+}
+
+
+/* 主页页码跳页 */
+.ME-container-page-info-changePage {
+  display: inline-block;
+  width: 110px;
+  border-radius: 5px;
+  text-align: center;
+  background: rgba(231, 231, 231, 1);
+}
+
+.ME-container-page-info-changePage input {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+  margin: 5px 11px 4px 13px;
+  color: #000000 !important;
+  font-size: 18px;
+  cursor: text;
+  border-radius: 0;
+  align-items: center;
+  background: #fff !important;
+}
+
+.ME-container-page-info input:nth-of-type(1) {
+  background: rgba(101, 186, 206, 1);
+  color: #fff;
+}
+
+/* ------------------------页码end-------------------- */
+/* --------------问题内容主页 end----------- */
+
+
+/*--------- 侧边栏 公有 ---------*/
+.ME-container-sidebar {
+  width: 140px;
+  height: 646px;
+  background: rgba(157, 213, 226, 1);
+  float: left;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.ME-container-sidebar span {
+  width: 134px;
+  margin-top: 4px;
+  height: 36px;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding-top: 7px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+/* 设置第一个侧边栏为选中 */
+.ME-container-sidebar span:nth-of-type(1) {
+  background: rgba(70, 159, 180, 1);
+  color: rgba(255, 255, 255, 1);
+}
+/* ------侧边栏 end ---------*/
+
+
+
+/*-------------- 简介---------------*/
+.ME-container-intro-unchecked {
+  width: 100%;
+  height: 100%;
+}
+
+/* 右边主体内容content*/
+.ME-container-intro-content {
+  float: right;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 76px 90px 50px 67px;
+  width: 1120px;
+}
+
+/* 输入框 */
+.ME-container-intro-content-data {
+  width: 68%;
+  height: 90%;
+  display: inline-block;
+}
+
+.ME-container-intro-content-data input {
+  width: 608px;
+  height: 44px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  color: rgba(0, 0, 0, 1);
+  margin: 0 0 30px 10px;
+  box-sizing: border-box;
+  padding: 8px 0 4px 10px;
+
+}
+
+.ME-container-intro-content-data textarea {
+  width: 607px;
+  height: 241px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  vertical-align: top;
+  margin-left: 10px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 1);
+  box-sizing: border-box;
+  padding: 8px 0 4px 10px;
+  resize: none;
+}
+
+/* 右侧图片上传 */
+.ME-container-intro-content-img {
+  height: 180px;
+  width: 263px;
+  display: inline-block;
+  margin: 0 0 0 39px;
+  box-sizing: border-box;
+  vertical-align: top;
+  border: 1px dashed #000;
+  padding: 2px;
+  cursor: pointer;
+  text-align: center;
+  
+}
+/* 右侧图片上传 */
+.ME-container-intro-content-img img {
+  height: 176px;
+  width: 260px;
+  display: inline-block;
+
+}
+
+/* 底部按钮  公有 */
+.ME-container-content-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ME-container-content-button input {
+  width: 136px;
+  height: 34px;
+  background: rgba(101, 186, 206, 1);
+  border-radius: 10px;
+  font-size: 18px;
+  color: rgba(254, 252, 252, 1);
+  cursor: pointer;
+}
+
+/* -------------- 简介end----------- */
+
+/* --------------方法与步骤 简介----------- */
+
+
+/* 右边主体内容content*/
+.ME-container-wayStep-content {
+  float: right;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 35px 30px 76px 55px;
+  width: 1120px;
+}
+
+.ME-container-wayStep-content-data {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+/* 每一列 */
+
+.ME-container-wayStep-content-data-item {
+  width: 96%;
+  height: 101px;
+  margin-bottom: 32px;
+}
+
+/* 编号 */
+.ME-container-wayStep-content-data-item span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  background: rgba(101, 186, 206, 1);
+  font-size: 30px;
+  color: rgba(255, 255, 255, 1);
+  vertical-align: top;
+  margin: 0 50px 0 20px;
+}
+
+/* 输入框 */
+.ME-container-wayStep-content-data-item textarea {
+  width: 611px;
+  height: 101px;
+  box-sizing: border-box;
+  padding: 10px 5px 5px 10px;
+  resize: none;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.ME-container-wayStep-content-data-item-img {
+  width: 150px;
+  height: 103px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin: 0 20px 0 20px;
+  vertical-align: top;
+  background: url(../img/pushImg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+/* 控制按钮 */
+.ME-container-wayStep-content-data-item-button {
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  border-radius: 10px;
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+.ME-container-wayStep-content-data-item-button button {
+  width: 31px;
+  display: block;
+  height: 26px;
+  background: rgba(157, 213, 226, 1);
+  border-radius: 10px;
+  margin-bottom: 11px;
+  cursor: pointer;
+}
+
+.ME-container-wayStep-content-data-item-button button:nth-of-type(1) {
+  cursor: move;
+}
+
+/* 右边主体内容content*/
+
+/* --------------方法与步骤 end----------- */
+/* --------------注意事项 end----------- */
+
+
+/* 右边主体内容content*/
+.ME-container-notice-content {
+  float: right;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 35px 30px 76px 50px;
+  width: 1120px;
+}
+
+/* 添加按钮 */
+.ME-container-notice-content-add {
+  width: 180px;
+  height: 34px;
+  font-size:18px;
+  color:rgba(254, 252, 252, 1);
+  background: rgba(157, 213, 226, 1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  float: right;
+}
+
+.ME-container-notice-content-data {
+  width: 100%;
+  height: 80%;
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: auto;
+    box-sizing: border-box;
+    margin: 20px 0 20px 0;
+}
+
+/* 每一行的内容 */
+.ME-container-notice-content-data-item {
+  width: 100%;
+  height: 45px;
+  overflow: auto;
+  margin-bottom: 22px;
+
+}
+
+.ME-container-notice-content-data-item span {
+  width: 17px;
+  height: 17px;
+  background: rgba(157, 213, 226, 1);
+  border-radius: 50%;
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.ME-container-notice-content-data-item input {
+  display: inline-block;
+  width: 833px;
+  height: 45px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  padding: 3px 2px 3px 5px;
+  font-size: 16px;
+  margin: 0 30px 0 20px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.ME-container-notice-content-data-item div {
+  display: inline-block;
+  width: 19px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 18px;
+  opacity: 0.5;
+}
+
+/* --------------注意事项 end----------- */

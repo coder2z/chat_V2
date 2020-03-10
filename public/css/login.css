@@ -1,0 +1,677 @@
+/* 主页面的布局 */
+.index {
+    width: 100%;
+    height: 969px;
+    min-width: 1200px;
+    background: url("../img/loginReg/bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+/*----------------------------头部-------------------*/
+.header {
+    width: 100%;
+    height: 60px;
+    background: rgba(101, 186, 206, 0);
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+.login-returnIndex{
+    margin-right: 1500px;
+}
+
+.header a {
+
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* 注册页面头部的右边logo */
+.header-index-logo {
+
+    height: 100%;
+    width: 8%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* 登陆页面头部的右边logo */
+    .header-index-register {
+    cursor: pointer;
+    height: 100%;
+    width: 8%;
+    margin-top: 20px;
+}
+
+.login-findPassword img{
+        width: 35px;
+        height: 35px;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 50%;
+        margin-right: 10px;
+        vertical-align: top;
+}
+
+.login-findPassword-word{
+        display: inline-block;
+        margin: -5px 25px 0 5px;
+}
+
+.header-index-logo img {
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.header-index-register img {
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: top;
+}
+/* 头部右边的信息 */
+.header-index-logo-login {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.header-index-info {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    font-size: 14px;
+    height: 60px;
+}
+
+.header-index-info span:nth-of-type(2) {
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+/*---------------------- 公共头部--end -------------------*/
+
+
+/* ------登陆注册----中间主体内容--indivdual---login  */
+.index-content {
+    width: 100%;
+    height: 909px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-container {
+    width: 750px;
+    height: 500px;
+    background: rgba(248, 252, 255, 1);
+    box-shadow: 0px 3px 7px 0px rgba(59, 135, 153, 0.65);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 中间的主题的logo */
+.index-content-logo {
+    position: absolute;
+    left: 217px;
+    width: 330px;
+    height: 100px;
+    top: -47px;
+    background-image: url(../img/loginReg/title1.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(254, 252, 252, 1);
+    line-height: 50px;
+
+}
+
+.index-content-logo img {
+    width: 54px;
+    height: 54px;
+
+}
+
+/* 中间主题内容的form表单 */
+.index-content-form {
+    width: 450px;
+
+    height: 300px;
+    padding-top: 65px;
+}
+
+/* form表单的input输入框 */
+.index-content-form input {
+
+    width: 308px;
+    height: 31px;
+    border: 1px solid rgba(136, 137, 137, 1);
+    border-radius: 5px;
+}
+
+/* form表单的每一列的名字 */
+.index-content-form label {
+    width: 62px;
+    height: 20px;
+    font-size: 19px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(65, 65, 65, 1);
+    line-height: 53px;
+    margin-left: 30px;
+}
+
+#verification-id {
+    width: 172px;
+    height: 31px;
+    border: 1px solid rgba(136, 137, 137, 1);
+    border-radius: 5px;
+}
+
+.is-verification {
+    width: 102px;
+    height: 31px;
+    cursor: pointer;
+    border: 1px solid rgba(136, 137, 137, 1);
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+/* login按钮 */
+.index-content-form-submit-login {
+    color: #fff;
+    width: 136px !important;
+    height: 34px;
+    cursor: pointer;
+    margin: 60px 0 0 166px;
+    background: rgba(101, 186, 206, 1);
+    border-radius: 10px;
+}
+
+/* reg按钮 */
+.index-content-form-submit {
+    color: #fff;
+    width: 136px !important;
+    height: 34px;
+    cursor: pointer;
+    margin: 60px 0 0 166px;
+    background: rgba(101, 186, 206, 1);
+    border-radius: 10px;
+}
+
+/* 验证码图片 */
+.verification img {
+    width: 104px;
+    vertical-align: middle;
+    margin-left: 27px;
+    height: 45px;
+}
+
+/* ------登陆注册----中间主体内容--indivdual---login-end----  */
+
+/* ------------account-manage----系统账号管理主页 --------------------*/
+
+.content {
+    width: 100%;
+    height: 909px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1440px;
+    height: 738px;
+    background: rgba(248, 252, 255, 1);
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+    position: relative;
+    display: flex;
+
+}
+
+.nav {
+    position: absolute;
+    height: 36px;
+    width: 700px;
+    top: -37px;
+}
+
+/* 虚线盒子 */
+.container-box {
+
+    width: 1260px;
+    margin: auto;
+    display: block;
+    height: 646px;
+    background: rgba(248, 252, 255, 1);
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+
+}
+
+.nav-item {
+
+    width: 134px;
+    height: 36px;
+    cursor: pointer;
+    background: rgba(248, 252, 255, 1);
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.nav-item span {
+    vertical-align: middle;
+    margin-top: 6px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+}
+
+.nav-item:nth-of-type(1) {
+    background: rgba(101, 186, 206, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.AM-container-select {
+    width: 72%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 10px 0 10px;
+    justify-content: space-between;
+}
+
+.AM-container-select-box {
+    width: 304px;
+    height: 30px;
+    border: 1px solid rgba(140, 138, 138, 1);
+    border-radius: 5px;
+}
+
+.AM-container-select input {
+    width: 88px;
+    height: 30px;
+    background: rgba(101, 186, 206, 1);
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* table表 */
+.AM-container-table {
+    width: 900px;
+    height: 468px;
+    margin: auto;
+
+    margin-top: 25px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+.AM-container-table td {
+    text-align: center;
+    width: 150px;
+    height: 35px;
+}
+
+.AM-container-tbody input {
+    width: 63px;
+    height: 27px;
+    background: rgba(101, 186, 206, 1);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(254, 252, 252, 1);
+}
+
+/* 页码 */
+.AM-container-page {
+    width: 72%;
+    padding-right: 10px;
+    background: rosybrown;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-right: 7px;
+}
+
+.AM-container-page-info {
+    float: right;
+    width: auto;
+}
+
+/* 页码上一页，下一页 */
+.AM-container-page-info button {
+    width: 63px;
+    height: 27px;
+    background: rgba(231, 231, 231, 1);
+    border-radius: 5px;
+    border: 0;
+
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 1);
+}
+
+.AM-container-page-info input {
+    width: 31px;
+    height: 27px;
+    cursor: pointer;
+    margin-right: 5px;
+    background: rgba(231, 231, 231, 1);
+    border-radius: 5px;
+    font-size: 14px;
+    border: 0;
+    color: #000000;
+}
+
+/* 页码跳页 */
+.AM-container-page-info-changePage {
+    display: inline-block;
+    width: 110px;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(231, 231, 231, 1);
+}
+
+.AM-container-page-info-changePage input {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+    margin: 5px 11px 4px 13px;
+     color: #000000 !important;
+     font-size: 18px;
+     cursor: text;
+    border-radius: 0;
+    align-items: center;
+    background: #fff!important;
+}
+
+.AM-container-page-info input:nth-of-type(1) {
+    background: rgba(101, 186, 206, 1);
+    color: #fff;
+}
+
+/* ------------添加企业账号 -------------*/
+
+.AM-container-addUser {
+    margin: auto;
+    display: none;
+    width: 1195px;
+    height: 574px;
+    background: rgba(248, 252, 255, 1);
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+/* 返回按钮 */
+.AM-container-addUser-return {
+    position: absolute;
+    cursor: pointer;
+    top: -37px;
+    width: 72px;
+    height: 36px;
+    background: rgba(101, 186, 206, 1);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    border: 0;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* 状态 */
+.AM-container-addUser-status {
+    position: absolute;
+    right: 1px;
+    top: -30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(65, 65, 65, 1);
+}
+
+/* 标题 */
+.AM-container-addUser-title {
+    width: 70%;
+    font-size: 24px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    margin: 25px 0 40px 35px;
+}
+
+/* form表单 */
+.AM-container-addUser-form {
+    height: 300px;
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.AM-container-addUser-form-left {
+    height: 300px;
+    width: 50%;
+    display: inline-block;
+    line-height: 20px;
+}
+
+.AM-container-addUser-form-name {
+    height: 300px;
+    width: 18%;
+    display: inline-block;
+    text-align: right;
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(65, 65, 65, 1);
+    line-height: 73px;
+}
+
+.AM-container-addUser-form-input {
+    height: 300px;
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.AM-container-addUser-form-input input {
+    width: 308px;
+    margin-bottom: 40px;
+    height: 31px;
+    border: 1px solid rgba(136, 137, 137, 1);
+    border-radius: 5px;
+}
+
+.AM-container-addUser-form-input input:nth-of-type(1) {
+    margin-top: 18px;
+}
+
+/* 右侧textarea */
+.AM-container-addUser-form-right {
+    display: inline-block;
+    height: 300px;
+    width: 49%;
+    vertical-align: top;
+}
+
+.AM-container-addUser-form-right textarea {
+    padding: 5px 15px 0 15px;
+    width: 520px;
+    height: 282px;
+    border: 1px solid rgba(136, 137, 137, 1);
+    border-radius: 5px;
+    font-size: 18px;
+    color: rgba(65, 65, 65, 1);
+    line-height: 30px;
+    resize: none;
+}
+
+/* 提交按钮 */
+.AM-container-addUser-form-bottom {
+    width: 100%;
+    text-align: right;
+    margin-top: 50px;
+}
+
+.AM-container-addUser-form-bottom button {
+    width: 136px;
+    border: 0;
+    height: 34px;
+    cursor: pointer;
+    margin-left: 50px;
+    background: rgba(101, 186, 206, 1);
+    border-radius: 10px;
+    font-size: 18px;
+    color: rgba(255, 254, 254, 1);
+}
+
+
+
+/* ---------------未审核 与已审核 禁用-------------- */
+.AM-container-unchecked {
+    margin: auto;
+    width: 1195px;
+    display: none;
+    height: 574px;
+    background: rgba(248, 252, 255, 1);
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+.AM-container-checked {
+    margin: auto;
+    width: 1195px;
+    display: none;
+    height: 574px;
+    background: rgba(248, 252, 255, 1);
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+.AM-container-ban {
+    margin: auto;
+    width: 1195px;
+    display: none;
+    height: 574px;
+    background: rgba(248, 252, 255, 1);
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+/* 未审核返回按钮 */
+.AM-container-unchecked-return {
+    position: absolute;
+    top: -37px;
+    width: 72px;
+    height: 36px;
+    background: rgba(101, 186, 206, 1);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    border: 0;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* 已审核返回按钮 */
+.AM-container-checked-return {
+    position: absolute;
+    top: -37px;
+    width: 72px;
+    height: 36px;
+    background: rgba(101, 186, 206, 1);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    border: 0;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* 禁用返回按钮 */
+.AM-container-ban-return {
+    position: absolute;
+    top: -37px;
+    width: 72px;
+    height: 36px;
+    background: rgba(101, 186, 206, 1);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    border: 0;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* 未审核状态 */
+.AM-container-is-checked-status {
+    position: absolute;
+    right: 1px;
+    top: -30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(65, 65, 65, 1);
+}
+
+/* 输入框名 */
+.AM-container-is-checked-form-name {
+    height: 300px;
+    width: 18%;
+    display: inline-block;
+    text-align: right;
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(65, 65, 65, 1);
+    line-height: 98px;
+}
+
+/* 输入框 */
+.AM-container-is-checked-form-input {
+    height: 300px;
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.AM-container-is-checked-form-input input {
+    width: 308px;
+    margin-bottom: 64px;
+    height: 31px;
+    border: 1px solid rgba(136, 137, 137, 1);
+    border-radius: 5px;
+}
+
+.AM-container-is-checked-form-input input:nth-of-type(1) {
+    margin-top: 35px;
+}
+
+/* ---------------未审核与审核end-------------- */

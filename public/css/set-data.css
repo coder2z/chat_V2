@@ -1,0 +1,661 @@
+			body {
+				margin: 0px;
+				padding: 0px;
+				font-family: Microsoft YaHei;
+			}
+			
+			body,
+			html {
+				height: 100%;
+				min-height: 900px;
+				min-width: 1600px;
+			}
+			
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				box-sizing: border-box;
+				outline: none;
+			}
+			
+			.index {
+				width: 100%;
+				height: 100%;
+				background: url(../img/background.png) no-repeat;
+				background-size: 100% 100%;
+				min-width: 1200px;
+			}
+			/*头部*/
+			
+			header {
+				height: 60px;
+				background: rgba(101, 186, 206, 0);
+				color: #FFFFFF;
+			}
+			
+			header a {
+				float: left;
+				font-size: 16px;
+				font-weight: 400;
+				color: rgba(254, 252, 252, 1);
+				text-decoration: none;
+				margin-top: 20px;
+				vertical-align: middle;
+			}
+			
+			header a img {
+				margin-top: -3px;
+			}
+			
+			.head_right {
+				height: 60px;
+				width: 250px;
+				float: right;
+				padding-right: 30px;
+			}
+			
+			.head_left {
+				float: left;
+				margin-left: 12px;
+			}
+			
+			.head_right-left {
+				padding-top: 6px;
+				float: left;
+			}
+			
+			.head_right-left img {
+				height: 50px;
+				width: 50px;
+				border-radius: 50%;
+			}
+			
+			.head_right-right {
+				padding-top: 7px;
+				float: right;
+				font-size: 17px;
+			}
+			/***********************************中间大框**************************************/
+			
+			.Questions-content {
+				width: 1440px;
+				height: 738px;
+				background: rgba(248, 252, 255, 1);
+				box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+				margin: 72px auto 0;
+				position: relative;
+				padding-top: 46px;
+			}
+			
+			.Questions-content .choice-ul {
+				display: flex;
+				position: absolute;
+				top: -39px;
+			}
+			
+			.Questions-content .choice-ul li {
+				width: 134px;
+				height: 36px;
+				background: rgba(248, 252, 255, 1);
+				box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.19);
+				border-radius: 5px;
+				text-align: center;
+				line-height: 36px;
+				margin-right: 3px;
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				cursor: pointer;
+			}
+			
+			.Questions-content .choice-ul li a {
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				cursor: pointer;
+				text-decoration: none;
+				display: inline-block;
+				height: 36px;
+				width: 134px;
+			}
+			
+			.Questions-content .choice-ul li a:hover {
+				color: #FFFFFF;
+			}
+			
+			.Questions-content .choice-ul li:hover {
+				background: rgba(101, 186, 206, 1);
+				color: #FFFFFF;
+			}
+			
+			.Questions-content .choice-ul li:nth-child(3) {
+				background: rgba(101, 186, 206, 1);
+				color: #FFFFFF;
+			}
+			
+			.content-main {
+				width: 1019px;
+				height: 646px;
+				background: rgba(248, 252, 255, 1);
+				box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+				margin: 0 auto;
+			}
+			/*中心内容，有兩個選擇鍵那個*/
+			
+			.set-data-left {
+				width: 140px;
+				height: 100%;
+				background: rgba(157, 213, 226, 1);
+				float: left;
+				padding-top: 2px;
+			}
+			
+			.clleft {
+				width: 134px;
+				height: 36px;
+				background: rgba(255, 255, 255, 1);
+				border-radius: 5px;
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(1, 1, 1, 1);
+				opacity: 0.8;
+				text-align: center;
+				line-height: 36px;
+				margin-left: 3px;
+				margin-bottom: 3px;
+				cursor: pointer;
+			}
+			
+			
+			.click-set {
+				background: rgba(70, 159, 180, 1);
+				color: rgba(255, 255, 255, 1);
+			}
+			
+			.set-data-right {
+				width: 879px;
+				height: 646px;
+				background: rgba(248, 252, 255, 1);
+				float: left;
+				padding: 70px 134px 0;
+				position: relative;
+			}
+			
+			.first-set {
+				width: 611px;
+				height: 241px;
+				background: rgba(255, 255, 255, 1);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+				resize: none;
+				padding: 10px;
+			}
+			
+			.sure-modify{
+				width: 136px;
+				height: 34px;
+				background: rgba(101, 186, 206, 1);
+				border-radius: 10px;
+				font-size: 18px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(254, 252, 252, 1);
+				text-align: center;
+				line-height: 36px;
+				position: absolute;
+				right: 135px;
+				bottom: 182px;
+				cursor: pointer;
+			}
+			.sure-modify:hover{
+				color: orange;
+			}
+
+
+
+
+                   /*弹出框*/
+                  .sr-two{
+                  	padding: 86px 141px 0;
+                  	position: relative;
+                  }
+                  .hot-question{
+                  	width: 600px;
+                  	max-height: 375px;
+                  	border:1px solid rgba(140,138,138,1);
+                  	border-right: none;
+                  	border-bottom: none;
+                  }
+                   .hot-question ul{
+                   	width: 100%;
+                   	height: 34px;
+                   	display: flex;
+                   }
+                   .hot-question ul li{
+                   	flex: 1;
+                   	border-right: 1px solid rgba(140,138,138,1);
+                   	border-bottom: 1px solid rgba(140,138,138,1);
+                   	text-align: center;
+                   	line-height: 34px;
+                   	height: 100%;
+                   	width: 100%;
+                   	padding-bottom: 6px;
+                   }
+                    .hot-question ul li input{
+                    	height: 100%;
+                    	width: 99%;
+											border:none;
+											background: rgba(248, 252, 255, 1);
+                    	text-align: center;
+                    }
+                   .look-hot{
+                   display: inline-block;
+				width: 63px;
+				height: 27px;
+				background: rgba(101, 186, 206, 1);
+				color:rgba(254,252,252,1);
+				border-radius: 5px;
+				line-height:27px ;
+				cursor: pointer;
+                   }
+                   
+                   
+                   /*分页按钮*/
+                   .hot-question-page{
+                   		height: 27px;
+				width: 100%;
+				margin-top: 50px;
+				display: flex;
+				justify-content: flex-end;
+				padding-right: 41px;
+				position: absolute;
+				right: 90px;
+				bottom: 100px;
+                   }
+                   
+                   	.dian{
+				width: 31px;
+			}
+                   .hot-question-page div {
+				margin-right: 10px;
+				background: rgba(231, 231, 231, 1);
+				border-radius: 5px;
+				height: 27px;
+				line-height: 27px;
+				text-align: center;
+				font-size: 14px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				cursor: pointer;
+			}
+				.focus{
+				color: white !important;
+				background:rgba(101, 186, 206, 1)!important;
+			}
+						.jump {
+				width: 108px;
+				height: 27px;
+				background: rgba(231, 231, 231, 1);
+				border-radius: 5px;
+				line-height: 27px;
+			}
+					.jump input {
+				width: 27px;
+				height: 18px;
+				background: rgba(255, 255, 255, 1);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+				margin-right: 5px;
+			}
+			.hot-question-page .last-page,
+			.next-page {
+				width: 63px;
+				float: right;
+			}
+			
+			.hot-question-page .page {
+				width: 31px;
+			}
+
+
+
+	/***********************************添加问答部分************************************/
+			/*简介部分代码*/
+			
+			.introduct-left {
+				float: left;
+				height: 100%;
+				width: 70%;
+			}
+			
+			.introduct-left .intrduct-title {
+				margin-bottom: 35px;
+			}
+			
+			.introduct-left .intrduct-title label {
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				margin-right: 10px;
+			}
+			
+			.introduct-left .intrduct-title input {
+				width: 611px;
+				height: 44px;
+				background: rgba(255, 255, 255, 1);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+				padding-left: 10px;
+			}
+			
+			.intrduct-intro {}
+			
+			.intrduct-intro label {
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				margin-right: 10px;
+				vertical-align: top;
+			}
+			
+			.intrduct-intro textarea {
+				width: 611px;
+				height: 341px;
+				background: rgba(255, 255, 255, 1);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+				resize: none;
+				padding: 10px;
+			}
+			
+			.introduct-right {
+				float: left;
+				height: 100%;
+				width: 30%;
+			}
+			
+			.introduct-right .send-img {
+				width: 208px;
+				height: 133px;
+				background: rgba(255, 255, 255, 1);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+				margin: 0 auto;
+				position: relative;
+				cursor: pointer;
+			}
+			
+			/*.send-img .shangchuan{
+				height: 62px;
+				width: 85px;
+				position: absolute;
+				top: 11px;
+				left: 62px;
+			}*/
+			.send-img img{
+				height: 100%;
+				width: 100%;
+				background-size: cover;
+			}
+			
+			.send-img span {
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				opacity: 0.6;
+				position: absolute;
+				top: 84px;
+				left: 73px;
+			}
+			
+
+			/*简介部分代码结束*/
+			
+			.Questions-content-content {
+				width: 1260px;
+				height: 646px;
+				background: rgba(248, 252, 255, 1);
+				box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.35);
+				margin: 0 auto;
+			}
+			
+			.Questions-content-content-left {
+				width: 140px;
+				height: 646px;
+				background: rgba(157, 213, 226, 1);
+				float: left;
+			}
+			
+			.Questions-content-content-left ul {}
+			
+			.Questions-content-content-left ul li {
+				width: 134px;
+				height: 36px;
+				background: rgba(255, 255, 255, 1);
+				border-radius: 5px;
+				text-align: center;
+				line-height: 36px;
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				opacity: 0.8;
+				margin-bottom: 3px;
+				margin-left: 2px;
+				cursor: pointer;
+			}
+			
+			.Questions-content .choice-ul li:hover {
+				background: rgba(101, 186, 206, 1);
+				color: #FFFFFF;
+			}
+			
+			.Questions-content-content-left ul li:first-child {
+				background: rgba(101, 186, 206, 1);
+				color: #FFFFFF;
+			}
+			/*添加问答的新建方法部分*/
+			
+			.Questions-content-content-right {
+				width: 1120px;
+				height: 646px;
+				background: rgba(248, 252, 255, 1);
+				float: right;
+			}
+			
+			.Questions-content-content-right-content {
+				width: 940px;
+				height: 646px;
+				margin: 0 auto;
+			}
+			
+			.Questions-content-content-right-content-top {
+				width: 100%;
+				height: 80%;
+				padding-top: 35px;
+				overflow: auto;
+			}
+			
+			.Questions-content-content-right-content-top ul {
+				width: 100%;
+			}
+			
+			.Questions-content-content-right-content-top ul li {
+				width: 100%;
+				height: 101px;
+				margin-bottom: 22px;
+				position: relative;
+			}
+			
+			.Questions-content-content-right-content-top ul li span {
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background: rgba(157, 213, 226, 1);
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				text-align: center;
+				line-height: 40px;
+				font-size: 30px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(255, 255, 255, 1);
+			}
+			
+			.Questions-content-content-right-content-top ul li textarea {
+				width: 611px;
+				height: 101px;
+				resize: none;
+				background: rgba(255, 255, 255, 1);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+				padding: 5px;
+				position: absolute;
+				top: 0;
+				left: 69px;
+			}
+			
+			.Questions-content-content-right-content-top ul li .send-small-img {
+				width: 150px;
+				height: 101px;
+				background: rgba(255, 255, 255, 1);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+				position: absolute;
+				top: 0;
+				right: 104px;
+				cursor: pointer;
+			}
+			
+			.img-box {
+				text-align: center;
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				opacity: 0.6;
+				overflow: hidden;
+				height: 100%;
+			}
+			
+			.img-box .sil{
+				margin-top: 10px;
+				width: 73px;
+				height: 55px;
+			}
+			.img-box img{
+				height: 100%;
+				width: 100%;
+				background-size: cover
+			}
+			.right-choice {
+				width: 31px;
+				height: 100%;
+				position: absolute;
+				right: 55px;
+			}
+			
+			.right-choice div {
+				width: 31px;
+				height: 26px;
+				background: rgba(157, 213, 226, 1);
+				border-radius: 10px;
+				margin-bottom: 12px;
+				text-align: center;
+				line-height: 26px;
+				font-size: 20px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(0, 0, 0, 1);
+				cursor: pointer;
+			}
+			
+
+			/*注意事项开始*/
+			.wirte-things-box{
+
+			}
+			.wirte-things {
+				height: 45px;
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			
+			.wirte-things .tuoyuan {
+				height: 17px;
+				width: 17px;
+				float: left;
+				margin-right: 20px;
+				margin-top: 13px;
+			}
+			
+			.write-way {
+				width: 833px;
+				height: 45px;
+				background: rgba(255, 255, 255, 1);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+				padding-left: 10px;
+			}
+			
+			.wirte-way-close {
+				width: 19px;
+				height: 18px;
+				float: right;
+				margin-top: 13px;
+				cursor: pointer;
+				margin-right: 10px;
+			}
+			
+			.add-things {
+				width: 180px;
+				height: 34px;
+				background: rgba(157, 213, 226, 1);
+				border-radius: 10px;
+				font-size: 18px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(254, 252, 252, 1);
+				line-height: 34px;
+				text-align: center;
+				margin-left: 37px;
+				cursor: pointer;
+			}
+			
+			.things-need ul {
+				display: flex;
+				justify-content: space-around;
+				margin-top: 50px;
+			}
+			
+			.things-need ul li {
+				width: 136px;
+				height: 34px;
+				background: rgba(101, 186, 206, 1);
+				border-radius: 10px;
+				text-align: center;
+				line-height: 34px;
+				font-size: 18px;
+				font-family: Microsoft YaHei;
+				font-weight: 400;
+				color: rgba(254, 252, 252, 1);
+				cursor: pointer;
+			}
+			/*注意事项结束*/
+			/***********************************添加问答部分结束************************************/
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
